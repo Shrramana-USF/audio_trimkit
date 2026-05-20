@@ -20,7 +20,7 @@ A Streamlit-based audio trimming tool for acoustic researchers with Praat-Parsel
 ## Installation
 
 ```bash
-pip install b2ai_voice_trimkit
+pip install b2ai-voice-trimkit
 ```
 
 ## Usage

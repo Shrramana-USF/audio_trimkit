@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "b2ai_voice_trimkit"
-version = "0.1.0"
+version = "0.1.1"
 description = "Audio trimming tool for acoustic researchers with Praat/parselmouth integration"
 readme = "README.md"
 license = "MIT"
@@ -45,6 +45,8 @@ Repository = "https://github.com/Shrramana-USF/b2ai_voice_trimkit"
 [tool.hatch.build.targets.sdist]
 include = [
     "src/b2ai_voice_trimkit/**/*",
+    "README.md",
+    "LICENSE",
 ]
 
 [tool.hatch.build.targets.wheel]
