@@ -41,6 +41,10 @@ audio_file_path
 /path/to/audio2.mp3
 ```
 
+## Output Location
+
+Trimmed files are saved in a `Final_trim` folder in the same directory as the original audio file.
+
 ## Quitting
 
 - Click **Quit Application** in the sidebar or
