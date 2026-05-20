@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "b2ai_voice_trimkit"
+version = "0.1.0"
+description = "Audio trimming tool for acoustic researchers with Praat/parselmouth integration"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "Shrramana-USF" }
+]
+keywords = ["audio", "trimming", "praat", "parselmouth", "cough", "speech", "acoustic", "research", "b2ai", "voice"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "numpy>=1.20.0",
+    "pandas>=1.3.0",
+    "streamlit>=1.20.0",
+    "praat-parselmouth>=0.4.0",
+    "plotly>=5.0.0",
+    "soundfile>=0.10.0",
+    "librosa>=0.9.0",
+    "pydub>=0.25.0",
+]
+
+[project.scripts]
+b2ai_voice_trimkit = "b2ai_voice_trimkit.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Shrramana-USF/b2ai_voice_trimkit"
+Repository = "https://github.com/Shrramana-USF/b2ai_voice_trimkit"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/b2ai_voice_trimkit/**/*",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/b2ai_voice_trimkit"]
